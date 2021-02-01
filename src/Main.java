@@ -34,6 +34,11 @@ public class Main {
         estudiantes = new String[3][size];
     }
 
+    static void registrarEstudiante(String nombre, String apellidos, String cedula) {
+        estudiantes[0][0] = nombre;
+        estudiantes[1][0] = apellidos;
+        estudiantes[2][0] = cedula;
+    }
     static void imprimirMatriz() {
         for (int fila = 0; fila<estudiantes.length; fila++) {
             for (int col = 0; col<estudiantes[fila].length; col++) {
